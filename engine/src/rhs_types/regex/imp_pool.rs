@@ -1,6 +1,6 @@
-use hashbrown::HashSet;
 use lazy_static::lazy_static;
 use std::borrow::Borrow;
+use std::collections::HashSet;
 use std::str::FromStr;
 use std::sync::{Arc, Mutex};
 
