@@ -32,6 +32,7 @@ serde = { version = "1.0.113", features = [ "derive" ] }
 serde_json = "1.0.56"
 sliceslice = "0.2.0"
 thiserror = "1.0"
+hashbrown = { version = "0.7.0", optional = true }
 
 [dev-dependencies]
 criterion = "0.3.3"
@@ -39,4 +40,6 @@ indoc = "0.3.6"
 lazy_static = "1.1.0"
 
 [features]
-default = [ "regex" ]
+default = [ "regex_pool" ]
+regex_regular = [ "regex" ]
+regex_pool = [ "regex", "hashbrown" ]
